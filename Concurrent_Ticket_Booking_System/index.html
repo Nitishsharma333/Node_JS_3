@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎟️ Concurrent Ticket Booking System</title>
+</head>
+<body>
+  <h1>🎟️ Concurrent Ticket Booking API</h1>
+  <p>This API demonstrates seat locking and booking to prevent double reservations.</p>
+  <h3>Available Endpoints:</h3>
+  <ul>
+    <li>GET /api/seats - View all seats</li>
+    <li>POST /api/seats/lock/:id - Lock a seat for 1 minute</li>
+    <li>POST /api/seats/book/:id - Confirm booking (must be locked first)</li>
+  </ul>
+  <p>Run the server using <code>node src/app.js</code> and use Postman or cURL to test the API.</p>
+</body>
+</html>
